@@ -1,0 +1,1 @@
+A landing webpage practise for Odin Project
