@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark-bg-color: #1F2937;
+    --header-link-text: #E5E7EB;
+    --button-color: #3882F6;
+    --quote-bg: #E5E7EB;
+    --quote-text: #1F2937;
+    --page-padding: 100px;
+    --logo-color: #F9FAF8;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--header-link-text);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px var(--page-padding) 10px var(--page-padding);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    background-color: var(--dark-bg-color);
+    flex-shrink: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--logo-color);
+}
+
+.logo img{
+    width: 100px;
+    height: auto;
+}
+
+.logo-frame {
+    background-color: #FFF;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--header-link-text);
+}
+
+#about-us {
+    display: flex;
+    gap: 25px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--dark-bg-color);
+}
+
+#about-us img {
+    max-width: 300px;
+    height: auto;
+    border-style: solid;
+}
+
+#sign-up {
+    background-color: blue;
+    padding: 10px;
+    width: 200px;
+    margin: 10px 0 0 0;
+}
+
+section {
+    padding: 50px 0 50px 0;
+}
+
+.welcome {
+    width: 500px;
+    color: var(--header-link-text);
+
+}
+
+#hall-of-fame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightcoral;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 300px;
+    height: 400px;
+    background-color: green;
+    margin: 20px;
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    background-color: greenyellow;
+}
+
+#nice-quotes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    color: var(--quote-text);
+    background-color: var(--quote-bg);
+}
+
+.quote {
+    width: 800px;
+}
+
+.quote1 {
+    text-align: justify;
+    font-style: italic;
+}
+
+.quote2 {
+    text-align: right;
+    font-weight: bold;
+    padding: 15px 0 0 0;
+}
+
+.sign-up-panel {
+    background-color: lightseagreen;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: var(--dark-bg-color);
+    color: var(--header-link-text);
+}
+
+
+
