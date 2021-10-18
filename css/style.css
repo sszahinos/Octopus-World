@@ -9,7 +9,7 @@
     --button-color: #3882F6;
     --quote-bg: #E5E7EB;
     --quote-text: #1F2937;
-    --page-padding: 100px;
+    --page-padding: 5vw;
     --logo-color: #F9FAF8;
 }
 
@@ -22,6 +22,10 @@ a {
     color: var(--header-link-text);
 }
 
+h1 {
+    font-size: 25px;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -31,19 +35,23 @@ header {
     position: sticky;
     top: 0px;
     background-color: var(--dark-bg-color);
-    flex-shrink: 0;
+    gap: 15px;
 }
 
 .logo {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 15px;
     color: var(--logo-color);
 }
 
 .logo img{
     width: 100px;
     height: auto;
+}
+
+.logo h1 {
+    font-size: 50px;
 }
 
 .logo-frame {
@@ -54,14 +62,17 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 10px 0 0;
 }
 
 header ul {
     display: flex;
-    gap: 20px;
+    gap: 50px;
     text-transform: uppercase;
     font-weight: bold;
     color: var(--header-link-text);
+    font-size: 15px;
+    text-align: right;
 }
 
 #about-us {
@@ -92,7 +103,6 @@ section {
 .welcome {
     width: 500px;
     color: var(--header-link-text);
-
 }
 
 #hall-of-fame {
@@ -100,27 +110,43 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: lightcoral;
 }
 
 .gallery {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .item {
     width: 300px;
     height: 400px;
-    background-color: green;
     margin: 20px;
     text-align: center;
+    /*
+    border-style: solid;
+    border-color: var(--button-color);
+    border-radius: 20px;
+    border-width: 4px;
+    */
+    
 }
 
 .item img {
-    width: 100%;
+    max-width: 95%;
     height: auto;
     background-color: greenyellow;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: var(--button-color);
+    margin: 5px;
+}
+
+.item p {
+    font-size: 1.3rem;
+    text-align: justify;
+    margin: 5px 10px 10px 10px;
 }
 
 #nice-quotes {
@@ -148,13 +174,26 @@ section {
     padding: 15px 0 0 0;
 }
 
+#social-network {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .sign-up-panel {
-    background-color: lightseagreen;
+    background-color: var(--button-color);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
+    width: 75%;
+    height: 150px;
+    border-radius: 25px;
+    color: #FFF;
+}
+
+#instagram img {
+    width: 50px;
 }
 
 footer {
@@ -166,5 +205,47 @@ footer {
     color: var(--header-link-text);
 }
 
+/* https://getcssscan.com/css-buttons-examples */
+.button-21 {
+  align-items: center;
+  appearance: none;
+  background-color: #3EB2FD;
+  background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd,sans-serif;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s,background-position .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.button-21:active,
+.button-21:focus {
+  outline: none;
+}
+
+.button-21:hover {
+  background-position: -20px -20px;
+}
+
+.button-21:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}
 
 
