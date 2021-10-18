@@ -136,6 +136,7 @@ section {
 .item img {
     max-width: 95%;
     height: auto;
+    max-height: 190px;
     background-color: greenyellow;
     border-style: solid;
     border-radius: 20px;
@@ -166,12 +167,20 @@ section {
 .quote1 {
     text-align: justify;
     font-style: italic;
+    word-wrap:break-word; 
+    display:inline-block;
 }
 
 .quote2 {
     text-align: right;
     font-weight: bold;
     padding: 15px 0 0 0;
+    word-wrap:break-word; 
+    display:inline-block;
+}
+
+.quote2 a {
+    color: var(--quote-text);
 }
 
 #social-network {
@@ -184,13 +193,16 @@ section {
     background-color: var(--button-color);
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 75%;
     height: 150px;
     border-radius: 25px;
     color: #FFF;
+    padding: 20px;
+    gap: 20px;
 }
+
 
 #instagram img {
     width: 50px;
