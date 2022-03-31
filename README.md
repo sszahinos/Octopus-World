@@ -1,4 +1,5 @@
 A landing webpage practise for Odin Project
+https://sszahinos.github.io/Octopus-World/
 
 References:
 - https://www.instagram.com/mediterraneansea_life/
